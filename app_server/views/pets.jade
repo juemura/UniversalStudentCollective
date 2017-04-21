@@ -75,7 +75,7 @@ block content
 							// End Tab 1 Content
 							// Tab 2 Content
 							#tab-2.tab-pane.fade
-								form(action='')
+								form(ng-controller='petsCtrl')
 									header.petform What can you do?
 									fieldset
 										section.col.col-4.pet.centered
@@ -129,9 +129,9 @@ block content
 														button.btn.btn-default(type='button') S
 												// /.row
 										section.col.col-4.pet.centered
-											a.btn.btn-primary.btn-lg(href='/providers')
+											button(type="button", class="btn btn-primary btn-lg", ng-click="petsCreate()")
 												span.glyphicon.glyphicon-search
-												|  Go!
+												|  Save
 
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')
 script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
